@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 60px;
+        }
+    }
+    
+}

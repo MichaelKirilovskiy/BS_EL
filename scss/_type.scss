@@ -1,0 +1,65 @@
+// ** variables & mixins **
+@import "variables/mixins";
+@import "variables/vars";
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'MuseoModerno', cursive;
+// font-family: 'Piedra', cursive;
+// font-family: 'Staatliches', cursive;
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body {
+	min-width: 320px;
+	font-family: $font-text;
+	color: $color-secondary;
+	font-weight: 400;
+	line-height: 1.63;
+	font-size: 16px;	
+}
+
+a {
+	font-family: $font-text;
+	font-size: 0.875rem;
+	line-height: 2;
+	color: #a4aead;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-head;
+    color: $color-primary;
+}
+h1, h2{
+	font-size: 2.25rem;
+	line-height: 1.17;
+}
+h3{
+	font-size: 1.25rem;
+}
+h4{
+	font-size: 1.125rem;
+}
+h5{
+	font-size: 1rem;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ol{
+	counter-reset: myCount;
+}
