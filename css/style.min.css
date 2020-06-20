@@ -31,7 +31,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Piedra", cursive;
-  color: #ff0000;
+  color: green;
 }
 
 h1, h2 {
@@ -66,6 +66,12 @@ ol {
   counter-reset: myCount;
 }
 
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +102,9 @@ ol {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
 }
 
 .card {
@@ -119,4 +128,3 @@ ol {
   -o-object-fit: cover;
      object-fit: cover;
 }
-/*# sourceMappingURL=style.min.css.map */
