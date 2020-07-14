@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/swiper/css/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=MuseoModerno:wght@400;700&family=Piedra&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -17,10 +18,10 @@
         <header class="header fix">
           <nav class="navbar">
             <div class="container">
-              <div class="navbar_container d-flex">
+              <div class="navbar_container d-flex justify-content-between">
                 <div class="navbar-brand">
                   <a href="#">
-                    <img src="img/mikhaniki.png" alt="logo" class="navbar-logo">
+                    <img src="img/logo_keys.png" alt="logo" class="navbar-logo">
                   </a>
                 </div>
                 <div class="navbar_menu d-flex align-items-center">
@@ -34,30 +35,30 @@
                       <span></span>
                     </button>
                   </div>
-                  <div class="navigation">
+                  <div class="navigation d-flex">
                     <ul class="navbar_nav d-flex">
                       <li class="nav-item">
-                        <a href="#"></a>
+                        <a href="#home">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a href="#"></a>
+                        <a href="#about">About</a>
                       </li>
                       <li class="nav-item">
-                        <a href="#"></a>
+                        <a href="#gallery">gallery</a>
                       </li>
                       <li class="nav-item">
-                        <a href="#"></a>
+                        <a href="#reviews">Reviews</a>
                       </li>
                       <li class="nav-item">
-                        <a href="#"></a>
+                        <a href="#blog">Blog</a>
                       </li>
                       <li class="nav-item">
-                        <a href="#"></a>
+                        <a href="#faq">faq</a>
                       </li>
                     </ul>
                     <div class="navbar-contacts">
                       <a href="#" class="navbar_phone">
-                        <i class="fas fa-mobile art">+38 (000) 000 00 00</i>
+                        <i class="fas fa-mobile art"> +38 (000) 000 00 00 </i>
                       </a>
                     </div>
                   </div>
@@ -68,7 +69,26 @@
         </header>
         <!-- /.header -->
         <div class="sections_wrap">
-          <div class="hero"></div>
+          <section class="hero container">
+            <div class="hero_images">
+              <div class="swiper-container hero_bg_container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="bg hero_bg" style="background-image: url('img/Kaya.jpg');"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg hero_bg" style="background-image: url('img/belka.jpg');"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg hero_bg" style="background-image: url('img/corshun_.jpg');"></div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="hero_info"></div>
+          </section>
           <!-- /.hero -->
         </div>
         <footer class="footer"></footer>
@@ -79,6 +99,7 @@
     <!-- scripts -->
   <script src="libs/jquery/jquery-3.5.1.min.js"></script>
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="libs/swiper/js/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>
